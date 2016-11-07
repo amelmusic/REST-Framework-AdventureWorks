@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stateDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="PurchaseOrderHeaderStateMachine">
+  <stateGraphMoniker name="/PurchaseOrderHeaderStateMachine" />
+  <nestedChildShapes>
+    <startShape Id="f1772e18-343a-4112-8226-842d55edaef0" absoluteBounds="0.83000000000000007, 1.97, 0.25, 0.25">
+      <startPointMoniker name="/PurchaseOrderHeaderStateMachine/Unknown" />
+    </startShape>
+    <stateShape Id="9b86ae8e-50eb-4ac1-88e5-44a2c29bdd2b" absoluteBounds="3.45, 1.9100000000000001, 1.2520833333333332, 0.35" fillColor="WhiteSmoke">
+      <stateMoniker name="/PurchaseOrderHeaderStateMachine/Pending" />
+    </stateShape>
+    <stateShape Id="f16af45a-dbe4-43b7-953e-8ce8df6ce79c" absoluteBounds="2.2800000000000002, 3.29, 1.2, 0.35" fillColor="WhiteSmoke">
+      <stateMoniker name="/PurchaseOrderHeaderStateMachine/Rejected" />
+    </stateShape>
+    <stateShape Id="4c740785-5e5c-4ea8-a3b0-7a455834c27f" absoluteBounds="6.92, 1.9000000000000001, 1.2, 0.35" fillColor="WhiteSmoke">
+      <stateMoniker name="/PurchaseOrderHeaderStateMachine/Approved" />
+    </stateShape>
+    <stateShape Id="fbdd98bd-6485-4596-9677-b9d06d475651" absoluteBounds="7.01, 3.24, 1.2, 0.35" fillColor="WhiteSmoke">
+      <stateMoniker name="/PurchaseOrderHeaderStateMachine/Completed" />
+    </stateShape>
+    <flowConnector edgePoints="[(1.08 : 2.095); (3.45 : 2.095)]" fixedFrom="NotFixed" fixedTo="NotFixed" TargetRelationshipDomainClassId="69f16fc9-4419-4490-bd98-50e80f7e15aa">
+      <relativeChildShapes />
+      <nodes>
+        <startShapeMoniker Id="f1772e18-343a-4112-8226-842d55edaef0" />
+        <stateShapeMoniker Id="9b86ae8e-50eb-4ac1-88e5-44a2c29bdd2b" />
+      </nodes>
+    </flowConnector>
+    <flowConnector edgePoints="[(4.09104216666667 : 2.26); (4.09104216666667 : 3.465); (3.48 : 3.465)]" fixedFrom="NotFixed" fixedTo="NotFixed" TargetRelationshipDomainClassId="69f16fc9-4419-4490-bd98-50e80f7e15aa">
+      <relativeChildShapes />
+      <nodes>
+        <stateShapeMoniker Id="9b86ae8e-50eb-4ac1-88e5-44a2c29bdd2b" />
+        <stateShapeMoniker Id="f16af45a-dbe4-43b7-953e-8ce8df6ce79c" />
+      </nodes>
+    </flowConnector>
+    <flowConnector edgePoints="[(4.70208333333333 : 2.08); (6.92 : 2.08)]" fixedFrom="NotFixed" fixedTo="NotFixed" TargetRelationshipDomainClassId="69f16fc9-4419-4490-bd98-50e80f7e15aa">
+      <relativeChildShapes />
+      <nodes>
+        <stateShapeMoniker Id="9b86ae8e-50eb-4ac1-88e5-44a2c29bdd2b" />
+        <stateShapeMoniker Id="4c740785-5e5c-4ea8-a3b0-7a455834c27f" />
+      </nodes>
+    </flowConnector>
+    <flowConnector edgePoints="[(7.565 : 2.25); (7.565 : 3.24)]" fixedFrom="NotFixed" fixedTo="NotFixed" TargetRelationshipDomainClassId="69f16fc9-4419-4490-bd98-50e80f7e15aa">
+      <relativeChildShapes />
+      <nodes>
+        <stateShapeMoniker Id="4c740785-5e5c-4ea8-a3b0-7a455834c27f" />
+        <stateShapeMoniker Id="fbdd98bd-6485-4596-9677-b9d06d475651" />
+      </nodes>
+    </flowConnector>
+    <flowConnector edgePoints="[(3.8794358974359 : 1.91); (3.8794358974359 : 1.66); (4.28200961538462 : 1.66); (4.28200961538462 : 1.91)]" fixedFrom="NotFixed" fixedTo="NotFixed" TargetRelationshipDomainClassId="69f16fc9-4419-4490-bd98-50e80f7e15aa">
+      <relativeChildShapes />
+      <nodes>
+        <stateShapeMoniker Id="9b86ae8e-50eb-4ac1-88e5-44a2c29bdd2b" />
+        <stateShapeMoniker Id="9b86ae8e-50eb-4ac1-88e5-44a2c29bdd2b" />
+      </nodes>
+    </flowConnector>
+  </nestedChildShapes>
+</stateDiagram>
